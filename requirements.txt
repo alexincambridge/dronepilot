@@ -1,0 +1,35 @@
+Create a swap file
+
+** start by creating a file which be used fo swap
+sudo fallocate -l 2G /swapfile
+
+** Only root is able to write and read swap
+sudo chmod 600 /swapfile
+
+** use mkswap utility to set up in linux
+sudo mkswap /swapfile
+
+** use the mkswap file using the following command
+sudo swapon /swapfile
+
+** Verify the swap is active
+sudo swapon -show
+
+** take the change permanen open /etc/fstab file:
+sudo nano /etc/fstab
+
+** copy and paste the following line
+/swapfile swap swap defaults 0 0
+
+
+Install RPILidar
+
+mkdir -p ~/catkin_ws/src
+
+cd ~/catkin_ws/src
+
+git clone https://github.com/robopeak/rplidar_ros
+
+cd ~/catkin_ws
+
+catkin_make
