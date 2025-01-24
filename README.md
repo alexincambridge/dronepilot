@@ -1,4 +1,4 @@
-#Drone with LiDAR Sensor for Object Avoidance and Environment Visualization
+# Drone with LiDAR Sensor for Object Avoidance and Environment Visualization
 
 Project Overview
 
