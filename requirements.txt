@@ -33,3 +33,6 @@ git clone https://github.com/robopeak/rplidar_ros
 cd ~/catkin_ws
 
 catkin_make
+
+vamos a usar micro-ros
+This ROS 2 package is the entry point for building micro-ROS apps for different embedded platforms.
